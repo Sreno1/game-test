@@ -1,0 +1,31 @@
+{
+  "name": "merchant.js",
+  "version": "1.0.0",
+  "description": "A tool for creating systems with lots of numbers",
+  "main": "src/index.js",
+  "author": "Flaque",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "docs": "./node_modules/.bin/documentation build src/** -f html -o docs"
+  },
+  "dependencies": {
+    "immutable": "^3.8.2",
+    "invariant": "^2.2.2",
+    "is-function": "^1.0.1"
+  },
+  "devDependencies": {
+    "documentation": "^5.3.3",
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/coverage",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/templates/",
+      "/dist/"
+    ]
+  }
+}
